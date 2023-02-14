@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import SelectDemo from '../views/demo/SelectDemo.vue'
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,11 @@ const router = new VueRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/select',
+      name: 'select',
+      component: SelectDemo,
     },
     {
       path: '/about',
