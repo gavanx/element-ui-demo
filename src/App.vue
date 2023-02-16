@@ -14,6 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
           <router-link to="/">Home</router-link>
           <router-link to="/about">About</router-link>
           <router-link to="/select">SelectDemo</router-link>
+          <router-link to="/select2">SelectDemo2</router-link>
         </nav>
       </div>
     </header>

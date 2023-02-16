@@ -1,11 +1,11 @@
 <template>
   <div class="about">
-    <h1>This is an SelectDemo page</h1>
+    <h1>This is an SelectDemo2 page</h1>
     <el-select v-model="selectedItem" placeholder="请选择">
       <el-option
         v-for="item in options"
-        :key="item.value"
-        :label="item.label"
+        :key="item.id"
+        :label="item.name"
         :value="item"
       >
       </el-option>
@@ -38,7 +38,10 @@ export default {
           value: "选项5",
           label: "北京烤鸭",
         },
-      ],
+      ].map((item) => ({
+        id: item.value,
+        name: item.label,
+      })),
       selectedItem: "",
     };
   },

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SelectDemo from '../views/demo/SelectDemo.vue'
+import SelectDemo2 from '../views/demo/SelectDemo2.vue'
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,11 @@ const router = new VueRouter({
       path: '/select',
       name: 'select',
       component: SelectDemo,
+    },
+    {
+      path: '/select2',
+      name: 'select2',
+      component: SelectDemo2,
     },
     {
       path: '/about',
