@@ -1,20 +1,20 @@
 <template>
   <div class="about">
     <h1>This is an SelectLimitDemo page</h1>
-    <select-limit v-model="selectedItem" placeholder="请选择LIMIT" :options="options">
-    </select-limit>
+    <el-select-limit v-model="selectedItem" placeholder="请选择LIMIT" :options="options">
+    </el-select-limit>
   </div>
 </template>
 
 <script>
-import SelectLimit from "./select-limit.vue";
+import ElSelectLimit from "./select-limit.vue";
 export default {
   components: {
-    SelectLimit,
+    ElSelectLimit,
   },
   data() {
     const options = [];
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
       options.push({
         value: "value " + i,
         label: "label " + i,
