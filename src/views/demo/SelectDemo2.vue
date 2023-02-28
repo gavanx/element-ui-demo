@@ -2,12 +2,7 @@
   <div class="about">
     <h1>This is an SelectDemo2 page</h1>
     <el-select v-model="selectedItem" placeholder="请选择">
-      <el-option
-        v-for="item in options"
-        :key="item.id"
-        :label="item.name"
-        :value="item"
-      >
+      <el-option v-for="item in options" :key="item.id" :label="item.name" :value="item">
       </el-option>
     </el-select>
   </div>
@@ -38,7 +33,7 @@ export default {
           value: "选项5",
           label: "北京烤鸭",
         },
-      ].map((item) => ({
+      ].map(item => ({
         id: item.value,
         name: item.label,
       })),

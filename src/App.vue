@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
@@ -15,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
           <router-link to="/about">About</router-link>
           <router-link to="/select">SelectDemo</router-link>
           <router-link to="/select2">SelectDemo2</router-link>
+          <router-link to="/select3">SelectLimitDemo</router-link>
         </nav>
       </div>
     </header>
