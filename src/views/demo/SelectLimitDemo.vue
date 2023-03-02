@@ -1,7 +1,12 @@
 <template>
   <div class="about">
     <h1>This is an SelectLimitDemo page</h1>
-    <el-select-limit v-model="selectedItem" placeholder="请选择LIMIT" :options="options">
+    <el-select-limit
+      v-model="selectedItem"
+      placeholder="请选择LIMIT"
+      :options="options"
+      :filter-item-method="filterItemDemo"
+    >
     </el-select-limit>
   </div>
 </template>
@@ -24,6 +29,12 @@ export default {
       options,
       selectedItem: "",
     };
+  },
+  methods: {
+    filterItemDemox(item, query) {
+      console.log("filterItemDemo ", item, query);
+      return true;
+    },
   },
   watch: {
     selectedItem(value) {

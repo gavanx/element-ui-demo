@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>This is an SelectDemo page</h1>
-    <el-select v-model="selectedItem" placeholder="请选择">
+    <el-select v-model="selectedItem" placeholder="请选择" filterable autocomplete>
       <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item">
       </el-option>
     </el-select>

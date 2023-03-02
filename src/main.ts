@@ -1,20 +1,23 @@
-import Vue from 'vue'
-import { createPinia, PiniaVuePlugin } from 'pinia'
+import Vue from "vue";
+import { createPinia, PiniaVuePlugin } from "pinia";
 
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
 
-import App from './App.vue'
-import router from './router'
+import App from "./App.vue";
+import router from "./router";
 
-import './assets/main.css'
-
+import "./assets/main.css";
+import wrapRenderList from "./core/wrapRenderList";
 
 Vue.use(ElementUI);
-Vue.use(PiniaVuePlugin)
+Vue.use(PiniaVuePlugin);
 
-new Vue({
+const vue = new Vue({
   router,
   pinia: createPinia(),
-  render: (h) => h(App)
-}).$mount('#app')
+  render: h => h(App),
+});
+wrapRenderList(Vue.prototype);
+console.log(vue);
+vue.$mount("#app");
