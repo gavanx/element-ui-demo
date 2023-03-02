@@ -5,7 +5,7 @@
       v-model="selectedItem"
       placeholder="请选择LIMIT"
       :options="options"
-      :filter-item-method="filterItemDemo"
+      :limit="10000000"
     >
     </el-select-limit>
   </div>
@@ -19,7 +19,7 @@ export default {
   },
   data() {
     const options = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 10000; i++) {
       options.push({
         value: "value " + i,
         label: "label " + i,
