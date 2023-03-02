@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import SelectDemo from "../views/demo/SelectDemo.vue";
 import SelectDemo2 from "../views/demo/SelectDemo2.vue";
 import SelectLimitDemo from "../views/demo/SelectLimitDemo.vue";
+import VForDemo from "../views/demo/VForDemo.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ const router = new VueRouter({
       path: "/select3",
       name: "select3",
       component: SelectLimitDemo,
+    },
+    {
+      path: "/vfor",
+      name: "vfor",
+      component: VForDemo,
     },
     {
       path: "/about",
