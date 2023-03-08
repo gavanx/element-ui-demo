@@ -8,14 +8,23 @@
       :limit="10000000"
     >
     </el-select-limit>
+    <el-select-limit-v2
+      v-model="selectedItem"
+      placeholder="222请选择LIMIT"
+      :options="options"
+      :limit="10000000"
+    >
+    </el-select-limit-v2>
   </div>
 </template>
 
 <script>
 import ElSelectLimit from "./select-limit.vue";
+import ElSelectLimitV2 from "./select-limit-v2.js";
 export default {
   components: {
     ElSelectLimit,
+    ElSelectLimitV2,
   },
   data() {
     const options = [];
