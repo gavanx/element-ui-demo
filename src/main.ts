@@ -4,6 +4,8 @@ import { createPinia, PiniaVuePlugin } from "pinia";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 
+import ExtraUI from "extra-ui";
+
 import App from "./App.vue";
 import router from "./router";
 
@@ -12,6 +14,7 @@ import wrapRenderList from "./core/wrapRenderList";
 
 Vue.use(ElementUI);
 Vue.use(PiniaVuePlugin);
+Vue.use(ExtraUI);
 
 const vue = new Vue({
   router,

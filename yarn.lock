@@ -2070,6 +2070,11 @@ extend@~3.0.2:
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
   integrity sha1-+LETa0Bx+9jrFAr/hYsQGewpFfo=
 
+extra-ui@^0.1.0:
+  version "0.1.0"
+  resolved "http://localhost:4873/extra-ui/-/extra-ui-0.1.0.tgz#b69ee613a2cd85be36c780e13354c56cbac6bc14"
+  integrity sha512-3PsuipAs3obPX4q49oendu1rdP0L3qr55/906d9HcQMSb96ebnLj+Uhf3S4dpnKNz/n0iaWQsZH/N0R+hUlySw==
+
 extract-zip@2.0.1:
   version "2.0.1"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/extract-zip/-/extract-zip-2.0.1.tgz#663dca56fe46df890d5f131ef4a06d22bb8ba13a"

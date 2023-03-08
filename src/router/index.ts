@@ -5,6 +5,7 @@ import SelectDemo from "../views/demo/SelectDemo.vue";
 import SelectDemo2 from "../views/demo/SelectDemo2.vue";
 import SelectLimitDemo from "../views/demo/SelectLimitDemo.vue";
 import VForDemo from "../views/demo/VForDemo.vue";
+import ExtraUIDemo from "../views/demo/ExtraUIDemo.vue";
 
 Vue.use(VueRouter);
 
@@ -36,6 +37,11 @@ const router = new VueRouter({
       path: "/vfor",
       name: "vfor",
       component: VForDemo,
+    },
+    {
+      path: "/extra-ui",
+      name: "extraui",
+      component: ExtraUIDemo,
     },
     {
       path: "/about",

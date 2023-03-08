@@ -17,6 +17,7 @@ import HelloWorld from "./components/HelloWorld.vue";
           <router-link to="/select2">SelectDemo2</router-link>
           <router-link to="/select3">SelectLimitDemo</router-link>
           <router-link to="/vfor">VForDemo</router-link>
+          <router-link to="/extra-ui">ExtraUIDemo</router-link>
         </nav>
       </div>
     </header>
