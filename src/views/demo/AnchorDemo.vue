@@ -19,7 +19,7 @@ import Backtop from '../components/Backtop.vue';
 import scrollTop from '../components/scrollTop';
 import scrollTo from '../components/scrollTo';
 
-const offset = 316 + 148;
+const offset = -5; //316 + 148;
 export default {
   components: {
     Backtop,
