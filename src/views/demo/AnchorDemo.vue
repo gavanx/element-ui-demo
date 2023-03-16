@@ -16,8 +16,9 @@
 </template>
 <script>
 import Backtop from '../components/Backtop.vue';
-import scrollTop from '../components/scrollTop';
-import scrollTo from '../components/scrollTo';
+// import scrollTop from '../components/scrollTop';
+// import scrollTo from '../components/scrollTo';
+import { scrollTop, scrollTo } from '../components/scroll';
 
 const offset = -5; //316 + 148;
 export default {
@@ -29,10 +30,10 @@ export default {
       scrollTop(document.documentElement);
     },
     handleScrollToTwo() {
-      scrollTo(document.documentElement, document.querySelector('#two'), offset);
+      scrollTo(document.documentElement, '#two', offset);
     },
     handleScrollToThree() {
-      scrollTo(document.documentElement, document.querySelector('#three'), offset);
+      scrollTo(document.documentElement, '#three', offset);
     },
   },
 };

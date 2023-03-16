@@ -3,6 +3,12 @@ const easeInOutCubic = value =>
   value < 0.5 ? cubic(value * 2) / 2 : 1 - cubic((1 - value) * 2) / 2;
 
 export default (container, target, offset = 0) => {
+  if (typeof container === 'string') {
+    container = document.querySelector(container);
+  }
+  if (typeof target === 'string') {
+    target = document.querySelector(target);
+  }
   let endValue = target.offsetTop + offset;
   console.log('xxxx', target.parentElement, target);
   while (target.parentElement && container !== target.parentElement) {
