@@ -17,6 +17,7 @@
     "element-ui": "^2.15.13",
     "extra-ui": "^0.1.0",
     "pinia": "^2.0.16",
+    "throttle-debounce": "^5.0.0",
     "vue": "^2.7.7",
     "vue-router": "^3.5.4"
   },

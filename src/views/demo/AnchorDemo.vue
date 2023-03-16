@@ -8,8 +8,14 @@
     <div style="height: 70vh; background: red" id="one">one</div>
     <div style="height: 70vh; background: blue" id="two">two</div>
     <div style="height: 70vh; background: green" id="three">three</div>
+    <backtop />
   </div>
 </template>
 <script>
-export default {};
+import Backtop from '../components/Backtop.vue';
+export default {
+  components: {
+    Backtop,
+  },
+};
 </script>
