@@ -19,6 +19,8 @@ import HelloWorld from "./components/HelloWorld.vue";
           <router-link to="/vfor">VForDemo</router-link>
           <router-link to="/extra-ui">ExtraUIDemo</router-link>
           <router-link to="/extends">ExtendsDemo</router-link>
+          <router-link to="/anchor">AnchorDemo</router-link>
+          <router-link to="/animation">AnimationDemo</router-link>
         </nav>
       </div>
     </header>

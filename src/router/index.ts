@@ -7,6 +7,8 @@ import SelectLimitDemo from '../views/demo/SelectLimitDemo.vue';
 import VForDemo from '../views/demo/VForDemo.vue';
 import ExtraUIDemo from '../views/demo/ExtraUIDemo.vue';
 import ExtendsDemo from '../views/demo/class/ExtendsDemo.vue';
+import AnchorDemo from '../views/demo/AnchorDemo.vue';
+import AnimationDemo from '../views/demo/AnimationDemo.vue';
 
 Vue.use(VueRouter);
 
@@ -48,6 +50,16 @@ const router = new VueRouter({
       path: '/extends',
       name: 'extends',
       component: ExtendsDemo,
+    },
+    {
+      path: '/anchor',
+      name: 'anchor',
+      component: AnchorDemo,
+    },
+    {
+      path: '/animation',
+      name: 'animation',
+      component: AnimationDemo,
     },
     {
       path: '/about',
