@@ -5,6 +5,8 @@
       <h2><a href="#two">two</a></h2>
       <h2><a href="#three">three</a></h2>
       <el-button @click="handleScrollTop">scrollTop</el-button>
+      <el-button @click="handleScrollToTwo">scrollTo two</el-button>
+      <el-button @click="handleScrollToThree">scrollTo three</el-button>
     </div>
     <div style="height: 70vh; background: red" id="one">one</div>
     <div style="height: 70vh; background: blue" id="two">two</div>
@@ -15,6 +17,9 @@
 <script>
 import Backtop from '../components/Backtop.vue';
 import scrollTop from '../components/scrollTop';
+import scrollTo from '../components/scrollTo';
+
+const offset = 316 + 148;
 export default {
   components: {
     Backtop,
@@ -22,6 +27,12 @@ export default {
   methods: {
     handleScrollTop() {
       scrollTop(document.documentElement);
+    },
+    handleScrollToTwo() {
+      scrollTo(document.documentElement, document.querySelector('#two'), offset);
+    },
+    handleScrollToThree() {
+      scrollTo(document.documentElement, document.querySelector('#three'), offset);
     },
   },
 };
